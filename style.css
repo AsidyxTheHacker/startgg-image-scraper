@@ -53,37 +53,42 @@ a {
     align-items: center;
     justify-content: center;
     color: black;
+    border-radius: 20px;
     font-weight: bold;
-    gap: 1em;
+    gap: .4em;
     text-align: center;
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-family: Arial, Helvetica, sans-serif;
     background-color: lightskyblue;
     min-width: calc(15% + 200px);
     margin: .3em;
     border:blue solid 3px;
+    box-shadow: rgb(0, 0, 150) 3px 3px 0;
     text-decoration: none;
     transition: .2s;
 }
 
 a img {
-    max-width: 50px;
-    min-height: 50px;
-    min-width: 50px;
-    max-height: 50px;
+    max-width: 60px;
+    min-height: 60px;
+    min-width: 60px;
+    max-height: 60px;
     border-radius: 50%;
+    border: white solid 2px;
 }
 
 .no-image {
     opacity: .2;
     background-color: rgb(248, 118, 118);
     border:red solid 3px;
+    box-shadow: rgb(140, 0, 0) 3px 3px 0;
     cursor: no-drop;
 }
 
 .has-image:hover {
     background-color: rgb(84, 251, 109);
     border:rgb(13, 193, 7) solid 3px;
+    box-shadow: rgb(7, 119, 3) 3px 3px 0;
 }
 
 @media (max-width: 400px) {
