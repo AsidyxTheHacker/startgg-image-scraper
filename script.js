@@ -54,10 +54,12 @@ async function search(slug) {
                         case 2:
                             if (account.user.images[0].type === 'banner') {
                                 imgUrl.setAttribute('href', account.user.images[1].url);
-                                imgUrl.classList.add('has-image');
-                                imgUrl.setAttribute('target', "_blank");
-                                break;
+                            } else {
+                                imgUrl.setAttribute('href', account.user.images[0].url);
                             }
+                            imgUrl.classList.add('has-image');
+                            imgUrl.setAttribute('target', "_blank");
+                            break;
                     }
                 };
             };
