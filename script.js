@@ -52,10 +52,12 @@ async function search(slug) {
                             imgUrl.setAttribute('target', "_blank");
                             break;
                         case 2:
-                            imgUrl.setAttribute('href', account.user.images[0].url);
-                            imgUrl.classList.add('has-image');
-                            imgUrl.setAttribute('target', "_blank");
-                            break;
+                            if (account.user.images[0].type === 'banner') {
+                                imgUrl.setAttribute('href', account.user.images[1].url);
+                                imgUrl.classList.add('has-image');
+                                imgUrl.setAttribute('target', "_blank");
+                                break;
+                            }
                     }
                 };
             };
