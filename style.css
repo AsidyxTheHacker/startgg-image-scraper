@@ -12,9 +12,9 @@ body {
     height: 100%;
 }
 
-#name-container {
+#name-container, #no-name-container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     height: 100%;
     width: 100%;
 }
@@ -46,8 +46,12 @@ input:focus {
 }
 
 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: black;
     font-weight: bold;
+    gap: 1em;
     text-align: center;
     font-size: 1.8em;
     font-family: Arial, Helvetica, sans-serif;
@@ -59,6 +63,14 @@ a {
     transition: .2s;
 }
 
+a img {
+    max-width: 50px;
+    min-height: 50px;
+    min-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+}
+
 .no-image {
     opacity: .2;
     background-color: rgb(248, 118, 118);
@@ -67,12 +79,12 @@ a {
 }
 
 .has-image:hover {
-    background-color: rgb(71, 241, 97);
-    border:rgb(9, 255, 0) solid 3px;
+    background-color: rgb(84, 251, 109);
+    border:rgb(13, 193, 7) solid 3px;
 }
 
 @media (max-width: 400px) {
-    #name-container {
+    #name-container, #no-name-container {
         grid-template-columns: repeat(1, 1fr);
     }
 }
