@@ -1,6 +1,9 @@
 body {
     margin: 0;
-    background: linear-gradient(rgb(67, 67, 67), black)
+    background: linear-gradient(rgb(67, 67, 67), black);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #container {
