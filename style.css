@@ -70,3 +70,9 @@ a {
     background-color: rgb(71, 241, 97);
     border:rgb(9, 255, 0) solid 3px;
 }
+
+@media (max-width: 400px) {
+    #name-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
