@@ -2,10 +2,10 @@ const startggURL = "https://api.start.gg/gql/alpha";
 const startggKey = "68c7472dcf94c69eaa84b69910f885be";
 let tournamentSlug;
 let pageNumber = 1;
-const nameContainer = document.getElementById('name-container')
-const noNameContainer = document.getElementById('no-name-container')
+const nameContainer = document.getElementById('name-container');
+const noNameContainer = document.getElementById('no-name-container');
 
-fetch('./test.json')
+fetch('./tester.json')
     .then(res => res.json())
     .then(data => {
         tournamentSlug = data[0].slug;

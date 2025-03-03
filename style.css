@@ -48,7 +48,23 @@ input:focus {
     cursor: pointer;
 }
 
-a {
+#nextBtn {
+    font-weight: bold;
+    border-radius: 50%;
+    padding: .5em 1em;
+    text-align: center;
+    border: solid black 2px;
+    box-shadow: black 2px 2px 0;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+#nextBtn:hover {
+    background-color: rgb(38, 173, 38);
+    box-shadow: black 0 0 0;
+}
+
+#name-container a, #no-name-container a {
     display: flex;
     align-items: center;
     justify-content: center;
