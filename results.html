@@ -7,13 +7,18 @@
     <script src="results.js" defer></script>
     <title>MIFFEE: RESULTS</title>
 </head>
-<body>
+<body id="body">
     <div class="results-container">
         <div class="results-input-container">
             <input id="tournamentInput" type="text" placeholder="Enter Tourney Slug...">
             <input type="text" id="eventInput" placeholder="Enter Event Slug...">
             <button id="searchResults">Search</button>
             <a href="./"><button id="imgBtn">Images ➡</button></a>
+            <div class="color-container">
+                <button id="backgroundBtn">Change</button>
+                <input id="colorOne" placeholder="color name/hex" type="text">
+                <input id="colorTwo" placeholder="color name/hex" type="text">
+            </div>
         </div>
         <div id="finalResults">
             <p>Recent Results</p>

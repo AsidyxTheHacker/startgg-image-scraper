@@ -4,6 +4,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
 }
 
 .results-container {
@@ -12,8 +14,17 @@ body {
     justify-content: center;
     flex-direction: column;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: AntiqueOlive;
     text-align: center;
+}
+
+.color-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    flex-direction: column;
+    min-width: 20%;
 }
 
 .results-input-container {
@@ -42,6 +53,30 @@ input:focus {
     cursor: pointer;
 }
 
+#finalResults {
+    border: solid white 3px;
+    padding: 2em 3em;
+    background-repeat: no-repeat;
+    background: black;
+    text-shadow: rgba(0, 0, 0, 0.46) 2px 2px 0;
+}
+
+#backgroundBtn {
+    color: white;
+    border-radius: 20px;
+    font-size: 1.5em;
+    padding: .3em 1em;
+    font-weight: bold;
+    cursor: pointer;
+    border: solid 2px rgb(23, 25, 141);
+    background-color: rgb(56, 56, 170);
+}
+
+#backgroundBtn:hover {
+    background-color: rgb(56, 170, 56);
+    border: solid 2px rgb(23, 141, 23);
+}
+
 #imgBtn {
     font-weight: bold;
     border-radius: 50%;
@@ -56,4 +91,9 @@ input:focus {
 #imgBtn:hover {
     background-color: rgb(38, 173, 38);
     box-shadow: black 0 0 0;
+}
+
+@font-face {
+    font-family: AntiqueOlive;
+    src: url('./Antique\ Olive\ Black\ Regular.ttf');
 }

@@ -6,6 +6,9 @@ let pageNumber = 1;
 let eventId;
 let resultContainer = document.getElementById('finalResults');
 let resultsBtn = document.getElementById('searchResults');
+let backgroundButton = document.getElementById("backgroundBtn");
+let colorOne;
+let colorTwo;
 
 async function getEventId() {
     const finalSlug = `tournament/${tournamentSlug}/event/${eventSlug}`;
@@ -35,6 +38,12 @@ resultsBtn.addEventListener('click', async () => {
     tournamentSlug = document.getElementById('tournamentInput').value
     eventSlug = document.getElementById('eventInput').value
     await getEventId(), getRecentSets();
+});
+
+backgroundButton.addEventListener('click', () => {
+    colorOne = document.getElementById('colorOne').value;
+    colorTwo = document.getElementById('colorTwo').value;
+    document.getElementById('finalResults').style.background = `linear-gradient(${colorOne}, ${colorTwo})`
 });
 
 async function getRecentSets() {
