@@ -54,11 +54,22 @@ input:focus {
 }
 
 #finalResults {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
     border: solid white 3px;
     padding: 2em 3em;
     background-repeat: no-repeat;
     background: black;
     text-shadow: rgba(0, 0, 0, 0.46) 2px 2px 0;
+    height: 350px;
+    width: 250px;
+}
+
+.result-title {
+    font-size: 1.5em;
+    text-decoration: underline;
 }
 
 #backgroundBtn {

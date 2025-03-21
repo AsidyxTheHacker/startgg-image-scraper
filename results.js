@@ -34,7 +34,11 @@ async function getEventId() {
 };
 
 resultsBtn.addEventListener('click', async () => {
-    resultContainer.innerHTML = 'Recent Results';
+    let resultTitle = document.createElement('p');
+    resultTitle.classList.add('result-title');
+    resultTitle.innerText = 'Recent Results';
+    resultContainer.innerHTML = '';
+    resultContainer.appendChild(resultTitle);
     tournamentSlug = document.getElementById('tournamentInput').value
     eventSlug = document.getElementById('eventInput').value
     await getEventId(), getRecentSets();
