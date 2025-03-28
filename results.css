@@ -63,8 +63,12 @@ input:focus {
     background-repeat: no-repeat;
     background: black;
     text-shadow: rgba(0, 0, 0, 0.46) 2px 2px 0;
-    height: 350px;
+    height: 250px;
     width: 250px;
+}
+
+#finalResults p {
+    margin: .5em;
 }
 
 .result-title {
