@@ -77,7 +77,13 @@ async function getRecentSets() {
                 let playerTwo = recentSets[i].slots[1].standing.entrant.participants[0].gamerTag;
                 let scoreOne = recentSets[i].slots[0].standing.stats.score.value;
                 let scoreTwo = recentSets[i].slots[1].standing.stats.score.value;
-                set.innerText = `${playerOne} ${scoreOne} VS ${scoreTwo} ${playerTwo}`;
+
+                if (scoreOne > scoreTwo) {
+                    set.innerText = `${playerOne} ${scoreOne} VS ${scoreTwo} ${playerTwo}`;
+                } else if (scoreTwo > scoreOne) {
+                    set.innerText = `${playerTwo} ${scoreTwo} VS ${scoreOne} ${playerOne}`;
+                };
+                
                 resultContainer.appendChild(set);
             }
             console.log(recentSets)
