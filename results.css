@@ -18,15 +18,6 @@ body {
     text-align: center;
 }
 
-.color-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-    flex-direction: column;
-    min-width: 20%;
-}
-
 .results-input-container {
     display: flex;
     align-items: center;
@@ -41,16 +32,19 @@ input {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     width: 100%;
-    border: none;
+    border: rgba(0, 0, 0, 0.951) solid 3px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5em;
 }
 
 input:focus {
     outline: none;
-}
-
-#searchResults {
-    font-size: 1.5em;
-    cursor: pointer;
 }
 
 #finalResults {
@@ -76,7 +70,7 @@ input:focus {
     text-decoration: underline;
 }
 
-#backgroundBtn {
+#backgroundBtn, #searchResults {
     color: white;
     border-radius: 20px;
     font-size: 1.5em;
@@ -85,17 +79,18 @@ input:focus {
     cursor: pointer;
     border: solid 2px rgb(23, 25, 141);
     background-color: rgb(56, 56, 170);
+    transition: .2s;
 }
 
-#backgroundBtn:hover {
+#backgroundBtn:hover, #searchResults:hover {
     background-color: rgb(56, 170, 56);
     border: solid 2px rgb(23, 141, 23);
 }
 
 #imgBtn {
     font-weight: bold;
-    border-radius: 50%;
-    padding: .5em 1em;
+    border-radius: 20px;
+    padding: .7em 1em;
     text-align: center;
     border: solid black 2px;
     box-shadow: black 2px 2px 0;
@@ -111,4 +106,9 @@ input:focus {
 @font-face {
     font-family: AntiqueOlive;
     src: url('./Antique\ Olive\ Black\ Regular.ttf');
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }

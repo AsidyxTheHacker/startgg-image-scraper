@@ -73,6 +73,7 @@ async function getRecentSets() {
 
             for (let i = 0; i < recentSets.length; i++) {
                 let set = document.createElement('p');
+                set.style.animation = `fadeIn .${i + 2.5}s ease-in-out`;
                 let playerOne = recentSets[i].slots[0].standing.entrant.participants[0].gamerTag;
                 let playerTwo = recentSets[i].slots[1].standing.entrant.participants[0].gamerTag;
                 let scoreOne = recentSets[i].slots[0].standing.stats.score.value;
@@ -82,10 +83,12 @@ async function getRecentSets() {
                     set.innerText = `${playerOne} ${scoreOne} VS ${scoreTwo} ${playerTwo}`;
                 } else if (scoreTwo > scoreOne) {
                     set.innerText = `${playerTwo} ${scoreTwo} VS ${scoreOne} ${playerOne}`;
+                } else if (scoreOne === 'null' || scoreTwo === 'null') {
+                    set.innerText = ``;
                 };
-                
+
                 resultContainer.appendChild(set);
-            }
+            };
             console.log(recentSets)
         })
 };

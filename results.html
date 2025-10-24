@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,20 @@
     <script src="results.js" defer></script>
     <title>MIFFEE: RESULTS</title>
 </head>
+
 <body id="body">
     <div class="results-container">
         <div class="results-input-container">
-            <input id="tournamentInput" type="text" placeholder="Enter Tourney Slug...">
-            <input type="text" id="eventInput" placeholder="Enter Event Slug...">
-            <button id="searchResults">Search</button>
+            <div class="input-container">
+                <input id="tournamentInput" type="text" placeholder="Enter Tourney Slug...">
+                <input type="text" id="eventInput" placeholder="Enter Event Slug...">
+                <button id="searchResults">Search</button>
+            </div>
             <a href="./"><button id="imgBtn">Images ➡</button></a>
-            <div class="color-container">
+            <div class="input-container">
+                <input id="colorOne" placeholder="Color Name/Hex" type="text">
+                <input id="colorTwo" placeholder="Color Name/Hex" type="text">
                 <button id="backgroundBtn">Change</button>
-                <input id="colorOne" placeholder="color name/hex" type="text">
-                <input id="colorTwo" placeholder="color name/hex" type="text">
             </div>
         </div>
         <div id="finalResults">
@@ -25,4 +29,5 @@
         </div>
     </div>
 </body>
+
 </html>

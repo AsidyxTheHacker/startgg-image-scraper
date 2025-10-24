@@ -50,7 +50,7 @@ input:focus {
 
 #nextBtn {
     font-weight: bold;
-    border-radius: 50%;
+    border-radius: 20px;
     padding: .5em 1em;
     text-align: center;
     border: solid black 2px;
