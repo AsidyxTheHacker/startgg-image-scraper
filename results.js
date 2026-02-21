@@ -1,5 +1,5 @@
 const startggURL = "https://api.start.gg/gql/alpha";
-const startggKey = "68c7472dcf94c69eaa84b69910f885be";
+const startggKey = "4f3ac3b27603ed696feaaf945c34178b";
 let tournamentSlug;
 let eventSlug;
 let pageNumber = 1;
